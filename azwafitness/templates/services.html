@@ -1,0 +1,312 @@
+{% extends 'base.html' %} {% load static %} {% block title %} Services {% endblock title %} {% block head %}
+<h1>Services</h1>
+{% endblock head %} {% block body %}
+
+<style>
+  .pricing-box {
+    -webkit-box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.1);
+    padding: 35px 50px;
+    border-radius: 20px;
+    position: relative;
+  }
+
+  .pricing-box .plan {
+    font-size: 34px;
+  }
+
+  .pricing-badge {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    right: 0;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    padding: 0;
+    overflow: hidden;
+    height: 100px;
+  }
+
+  .pricing-badge .badge {
+    float: right;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: -67px;
+    top: 17px;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    font-size: 13px;
+    margin: 0;
+    padding: 7px 10px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #fb7179;
+  }
+  .mb-2,
+  .my-2 {
+    margin-bottom: 0.5rem !important;
+  }
+  p {
+    line-height: 1.7;
+  }
+</style>
+
+<section id="pricing">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="title-box text-center">
+          <h3 class="title-heading mt-4">Best Pricing Package</h3>
+          <p class="text-muted f-17 mt-3">Gorkha Martial Arts, provides various range of prices to its customers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5 pt-4">
+      <div class="col-lg-3">
+        <div class="pricing-box mt-4">
+          <i class="mdi mdi-account h1"></i>
+          <h4 class="f-20">Basic</h4>
+
+          <div class="mt-4 pt-2">
+            <p class="mb-2 f-18"><b> Features </b></p>
+            <p class="mb-2">
+              <i class="bx bxs-x-circle f-18 mr-4" style="color: #d0090d"></i>
+              Personal Training
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              2 Classes Per Week
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              Access to Gym
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              1 Martial Art
+            </p>
+          </div>
+
+          <div class="pricing-plan mt-4 pt-2">
+            <h4 class="text-muted"><span class="plan pl-3 text-dark">£25.00 </span></h4>
+            <p class="text-muted mb-0">Per Month</p>
+          </div>
+
+          <div class="mt-4 pt-3">
+            <a href="" class="btn btn-warning btn-rounded">Purchase Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="pricing-box mt-4">
+          <i class="mdi mdi-account-multiple h1 text-primary"></i>
+          <h4 class="f-20 text-black">Intermediate Plan</h4>
+
+          <div class="mt-4 pt-2">
+            <p class="mb-2 f-18"><b> Features </b></p>
+            <p class="mb-2">
+              <i class="bx bxs-x-circle f-18 mr-4" style="color: #d0090d"></i>
+              Personal Training
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              3 Classes Per Week
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              Access to Gym
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              1 Martial Art
+            </p>
+          </div>
+
+          <div class="pricing-plan mt-4 pt-2">
+            <h4 class="text-muted"><span class="plan pl-3 text-dark">£35.00 </span></h4>
+            <p class="text-muted mb-0">Per Month</p>
+          </div>
+
+          <div class="mt-4 pt-3">
+            <a href="" class="btn btn-warning btn-rounded">Purchase Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="pricing-box mt-4">
+          <i class="mdi mdi-account-multiple-plus h1"></i>
+          <h4 class="f-20">Advanced Plan</h4>
+
+          <div class="mt-4 pt-2">
+            <p class="mb-2 f-18"><b> Features </b></p>
+            <p class="mb-2">
+              <i class="bx bxs-x-circle f-18 mr-4" style="color: #d0090d"></i>
+              Personal Training
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              5 Classes Per Week
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              Access to Gym
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              Protein Powder
+            </p>
+          </div>
+
+          <div class="pricing-plan mt-4 pt-2">
+            <h4 class="text-muted"><span class="plan pl-3 text-dark">£45.00 </span></h4>
+
+            <p class="text-muted mb-0">Per Month</p>
+          </div>
+
+          <div class="mt-4 pt-3">
+            <a href="" class="btn btn-warning btn-rounded">Purchase Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="pricing-box mt-4">
+          <i class="mdi mdi-account h1"></i>
+          <h4 class="f-20">Elite</h4>
+
+          <div class="mt-4 pt-2">
+            <p class="mb-2 f-18"><b> Features </b></p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              Personal Training
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              Unlimites Classes
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              Access to Gym
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              Protein Powder
+            </p>
+          </div>
+
+          <div class="pricing-plan mt-4 pt-2">
+            <h4 class="text-muted"><span class="plan pl-3 text-dark">£60.00 </span></h4>
+            <p class="text-muted mb-0">Per Month</p>
+          </div>
+
+          <div class="mt-4 pt-3">
+            <a href="" class="btn btn-warning btn-rounded">Purchase Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="row mt-5 pt-4 d-flex justify-content-center">
+      <div class="col-lg-4">
+        <div class="pricing-box mt-4">
+          <i class="mdi mdi-account-multiple h1 text-primary"></i>
+          <h4 class="f-20 text-black">Private Martial Arts Tuition</h4>
+
+          <div class="mt-4 pt-2">
+            <p class="mb-2 f-18"><b> Features </b></p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              Personal Training
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              1 Hour Per Day
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              Access to Gym
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              Protein Powder
+            </p>
+          </div>
+
+          <div class="pricing-plan mt-4 pt-2">
+            <h4 class="text-muted"><span class="plan pl-3 text-dark">£15.00 </span></h4>
+            <p class="text-muted mb-0">Per Month</p>
+          </div>
+
+          <div class="mt-4 pt-3">
+            <a href="" class="btn btn-warning btn-rounded">Purchase Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="pricing-box mt-4">
+          <i class="mdi mdi-account-multiple-plus h1"></i>
+          <h4 class="f-20">Junior membership</h4>
+
+          <div class="mt-4 pt-2">
+            <p class="mb-2 f-18"><b> Features </b></p>
+            <p class="mb-2">
+              <i class="bx bxs-x-circle f-18 mr-4" style="color: #d0090d"></i>
+              Personal Training
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              1 Classes Per Week
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-x-circle f-18 mr-4" style="color: #d0090d"></i>
+
+              Access to Gym
+            </p>
+            <p class="mb-2">
+              <i class="bx bxs-check-circle f-18 mr-4" style="color: #0aa120"></i>
+
+              Protein Powder
+            </p>
+          </div>
+
+          <div class="pricing-plan mt-4 pt-2">
+            <h4 class="text-muted"><span class="plan pl-3 text-dark">£25.00 </span></h4>
+
+            <p class="text-muted mb-0">Per Month</p>
+          </div>
+
+          <div class="mt-4 pt-3">
+            <a href="" class="btn btn-warning btn-rounded">Purchase Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Row 2 -->
+  </div>
+</section>
+
+{% endblock body %}
